@@ -104,6 +104,6 @@ exports.deploy = deploy;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(scss, fonts, images, stylesNlz, html, scripts),
+    gulp.parallel(scss, images, stylesNlz, html, scripts),
     gulp.parallel(watch, serve)
 ));
