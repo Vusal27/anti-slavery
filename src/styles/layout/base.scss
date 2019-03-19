@@ -57,6 +57,7 @@ input, textarea {
 .main {
     background: #f1f1f1;
     padding-top: 100px;
+    display: block;
     @include tablet() {
         padding-top: 30px;
     }
