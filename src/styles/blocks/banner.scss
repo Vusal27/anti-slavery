@@ -1,0 +1,26 @@
+.banner {
+    width: 50%;
+    @include tablet() {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__wrap {
+        border-radius: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+        height: 37.5vw;
+        width: 37.5vw;
+        @include laptop() {
+            height: 40.5vw;
+            width: 40.5vw;
+        }
+        @include tablet() {
+            height: 90vw;
+            width: 90vw;
+        }
+    }
+    &__img {
+        height: 100%;
+        transform: translateX(-130px);
+    }
+}

@@ -1,0 +1,63 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'tt_norms', Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0px;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+button {
+    outline: none;
+}
+:root {
+    font-size: 15px;
+    @include laptop {
+        font-size: 14px;
+    }
+    @include tablet {
+        font-size: 13px; 
+    }
+    @include phone {
+        font-size: 12px;
+    }
+}
+input, textarea {
+    box-sizing: border-box;
+}
+.container { 
+    width: 90vw;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    @include laptop() {
+        width: 93vw;
+    }
+    &--mobile {
+        @include tablet() {
+            flex-flow: column-reverse;
+        }
+    }
+}
+.main {
+    background: #f1f1f1;
+    padding-top: 100px;
+    @include tablet() {
+        padding-top: 30px;
+    }
+}
